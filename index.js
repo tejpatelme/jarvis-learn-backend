@@ -6,6 +6,7 @@ const express = require("express");
 const { connectToDatabase } = require("./db/dbConnection");
 const { errorHandler } = require("./middlewares/error-handler");
 const { routeNotFound } = require("./middlewares/route-not-found");
+const { videosRouter } = require("./routes/index");
 
 const PORT = process.env.PORT | 3000;
 const app = express();
@@ -15,6 +16,8 @@ connectToDatabase();
 app.get("/", (req, res) => {
   res.send("Backend API for jarvis learn video library app");
 });
+
+app.use("/videos", videosRouter);
 
 /**
  * 404 Router Handler.
