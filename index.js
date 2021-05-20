@@ -3,6 +3,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 const express = require("express");
+const cors = require("cors");
 const { connectToDatabase } = require("./db/dbConnection");
 const { errorHandler } = require("./middlewares/error-handler");
 const { routeNotFound } = require("./middlewares/route-not-found");
@@ -10,6 +11,7 @@ const { videosRouter } = require("./routes/index");
 
 const PORT = process.env.PORT | 3000;
 const app = express();
+app.use(cors());
 
 connectToDatabase();
 
