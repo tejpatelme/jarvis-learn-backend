@@ -3,9 +3,12 @@ if (process.env.NODE_ENV === "development") {
 }
 
 const express = require("express");
+const { connectToDatabase } = require("./db/dbConnection");
 
 const PORT = process.env.PORT | 3000;
 const app = express();
+
+connectToDatabase();
 
 app.get("/", (req, res) => {
   res.send("Backend API for jarvis learn video library app");
