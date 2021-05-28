@@ -1,6 +1,10 @@
 const { Schema, model } = require("mongoose");
 
 const VideoSchema = new Schema({
+  videoId: {
+    type: String,
+    required: "Video Id is required",
+  },
   imageURL: {
     type: String,
     required: "URL of video image is required",
