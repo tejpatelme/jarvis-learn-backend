@@ -1,5 +1,6 @@
 const videoLibrary = [
   {
+    videoId: "gnscqweM_NU",
     imageURL: "http://i3.ytimg.com/vi/gnscqweM_NU/maxresdefault.jpg",
     name: "Figma Tutorial: Shape Tools",
     description:
@@ -11,6 +12,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "5x2uHUB_pzw",
     imageURL: "http://i3.ytimg.com/vi/5x2uHUB_pzw/maxresdefault.jpg",
     name: "Figma Tutorial: Pen Tool Basics & Vector Networks",
     description:
@@ -22,6 +24,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "NrKX46DzkGQ",
     imageURL: "http://i3.ytimg.com/vi/NrKX46DzkGQ/maxresdefault.jpg",
     name: "Figma Tutorial: Auto Layout (older version)",
     description:
@@ -33,6 +36,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "LHY9cm_2zwU",
     imageURL: "http://i3.ytimg.com/vi/LHY9cm_2zwU/maxresdefault.jpg",
     name: "Figma Tutorial: Constraints",
     description: "Learn how you can leverage constraints in figma.",
@@ -43,6 +47,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "gUb303HQSGk",
     imageURL: "http://i3.ytimg.com/vi/gUb303HQSGk/maxresdefault.jpg",
     name: "Figma Tutorial: Gradients (Linear, Radial, Angular, Diamond)",
     description:
@@ -54,6 +59,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "e1BRH09iwes",
     imageURL: "http://i3.ytimg.com/vi/e1BRH09iwes/maxresdefault.jpg",
     name: "Figma Tutorial: Effects",
     description:
@@ -65,6 +71,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "V7waqacFYZs",
     imageURL: "http://i3.ytimg.com/vi/V7waqacFYZs/maxresdefault.jpg",
     name: "Figma Tutorial: Color Picker",
     description:
@@ -76,6 +83,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "gtQ_A3imzsg",
     imageURL: "http://i3.ytimg.com/vi/gtQ_A3imzsg/maxresdefault.jpg",
     name: "Figma Tutorial: Creating Styles",
     description:
@@ -87,6 +95,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "L7dtFGUd-C0",
     imageURL: "http://i3.ytimg.com/vi/L7dtFGUd-C0/maxresdefault.jpg",
     name: "Figma Tutorial: Rounded Corners",
     description:
@@ -98,6 +107,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "5i-ebNTjad8",
     imageURL: "http://i3.ytimg.com/vi/5i-ebNTjad8/maxresdefault.jpg",
     name: "Figma Tutorial: Text Tool and Fonts",
     description:
@@ -109,6 +119,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "Dn0Ldi1SPv0",
     imageURL: "http://i3.ytimg.com/vi/Dn0Ldi1SPv0/maxresdefault.jpg",
     name: "Figma Tutorial: Masks",
     description:
@@ -120,6 +131,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "8ZaX6qEcUCU",
     imageURL: "http://i3.ytimg.com/vi/8ZaX6qEcUCU/maxresdefault.jpg",
     name: "Figma Tutorial: Boolean Operations",
     description:
@@ -131,6 +143,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "saoB8uqUAH8",
     imageURL: "http://i3.ytimg.com/vi/saoB8uqUAH8/maxresdefault.jpg",
     name: "Figma Tutorial: imageURLs",
     description:
@@ -142,6 +155,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "qQyaPqem0TA",
     imageURL: "http://i3.ytimg.com/vi/qQyaPqem0TA/maxresdefault.jpg",
     name: "Figma Tutorial: Alignment & Distribution",
     description:
@@ -153,6 +167,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "zd8wrAdURN0",
     imageURL: "http://i3.ytimg.com/vi/zd8wrAdURN0/maxresdefault.jpg",
     name: "Figma Tutorial: Layout Grids",
     description:
@@ -164,6 +179,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "0xafhHNEsp8",
     imageURL: "http://i3.ytimg.com/vi/0xafhHNEsp8/maxresdefault.jpg",
     name: "Figma Tutorial: Guides",
     description:
@@ -175,6 +191,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "cAkOH9uaXHA",
     imageURL: "http://i3.ytimg.com/vi/cAkOH9uaXHA/maxresdefault.jpg",
     name: "Figma Tutorial: Easing Curves",
     description:
@@ -186,6 +203,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "y29Xwt9dET0",
     imageURL: "http://i3.ytimg.com/vi/y29Xwt9dET0/maxresdefault.jpg",
     name: "Figma Tutorial: Variants",
     description:
@@ -197,6 +215,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "YqQx75OPRa0",
     imageURL: "http://i3.ytimg.com/vi/YqQx75OPRa0/maxresdefault.jpg",
     name: "Beginning Graphic Design: Fundamentals",
     description:
@@ -208,6 +227,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "sByzHoiYFX0",
     imageURL: "http://i3.ytimg.com/vi/sByzHoiYFX0/maxresdefault.jpg",
     name: "Beginning Graphic Design: Typography",
     description:
@@ -219,6 +239,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "_2LLXnUdUIc",
     imageURL: "http://i3.ytimg.com/vi/_2LLXnUdUIc/maxresdefault.jpg",
     name: "Beginning Graphic Design: Color",
     description:
@@ -230,6 +251,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "a5KYlHNKQB8",
     imageURL: "http://i3.ytimg.com/vi/a5KYlHNKQB8/maxresdefault.jpg",
     name: "Beginning Graphic Design: Layout & Composition",
     description:
@@ -241,6 +263,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "MELKuexR3sQ",
     imageURL: "http://i3.ytimg.com/vi/MELKuexR3sQ/maxresdefault.jpg",
     name: "Beginning Graphic Design: imageURLs",
     description:
@@ -252,6 +275,7 @@ const videoLibrary = [
   },
 
   {
+    videoId: "l-S2Y3SF3mM",
     imageURL: "http://i3.ytimg.com/vi/l-S2Y3SF3mM/maxresdefault.jpg",
     name: "Beginning Graphic Design: Branding & Identity",
     description:
@@ -262,6 +286,7 @@ const videoLibrary = [
     topic: "Design Fundamentals",
   },
   {
+    videoId: "1Dh8ZBQp9jo",
     imageURL: "http://i3.ytimg.com/vi/1Dh8ZBQp9jo/maxresdefault.jpg",
     name: "The New Material.io",
     description:
@@ -272,6 +297,7 @@ const videoLibrary = [
     topic: "Material Design",
   },
   {
+    videoId: "AUXKtt6bizw",
     imageURL: "http://i3.ytimg.com/vi/AUXKtt6bizw/maxresdefault.jpg",
     name: "Understanding the Material Design type system | Google Design Tutorials",
     description:
@@ -282,6 +308,7 @@ const videoLibrary = [
     topic: "Material Design",
   },
   {
+    videoId: "TB3L1LbC4zw",
     imageURL: "http://i3.ytimg.com/vi/TB3L1LbC4zw/maxresdefault.jpg",
     name: "Understanding the Material Design color system | Google Design Tutorials",
     description:
@@ -292,6 +319,7 @@ const videoLibrary = [
     topic: "Material Design",
   },
   {
+    videoId: "cnlabMHshcE",
     imageURL: "http://i3.ytimg.com/vi/cnlabMHshcE/maxresdefault.jpg",
     name: "Beginner Tips for Typography | Material Live Highlights",
     description: "How how to use Type effectively",
@@ -301,6 +329,7 @@ const videoLibrary = [
     topic: "Material Design",
   },
   {
+    videoId: "eXcKOqviLE0",
     imageURL: "http://i3.ytimg.com/vi/eXcKOqviLE0/maxresdefault.jpg",
     name: "How to Apply a Color Palette to Your Design – Tutorial",
     description:
