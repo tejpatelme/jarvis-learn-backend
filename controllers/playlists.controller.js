@@ -28,3 +28,40 @@ exports.getUserPlaylists = async (req, res) => {
     res.status(500).json({ success: false, errorMessage: err.message });
   }
 };
+
+exports.addOrRemoveVideo = async (req, res) => {
+  const { playlistId } = req.params;
+  const { videoId } = req.body;
+
+  try {
+    const playlist = await Playlist.findById(playlistId);
+
+    const videoExistsIndex = playlist.videos.findIndex(
+      (video) => String(video) === String(videoId)
+    );
+
+    console.log(videoExistsIndex);
+
+    videoExistsIndex !== -1
+      ? playlist.videos.splice(videoExistsIndex, 1)
+      : playlist.videos.push(videoId);
+
+    await playlist.save();
+
+    res.status(200).json({ success: true });
+  } catch (err) {
+    res.status(500).json({ success: false, errorMessage: err.message });
+  }
+};
+
+exports.deletePlaylist = async (req, res) => {
+  const { playlistId } = req.params;
+
+  try {
+    await Playlist.findByIdAndDelete(playlistId);
+
+    res.status(200).json({ success: true });
+  } catch (err) {
+    res.status(500).json({ success: false, errorMessage: err.message });
+  }
+};
