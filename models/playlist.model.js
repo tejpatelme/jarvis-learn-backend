@@ -8,3 +8,7 @@ const PlaylistSchema = new Schema({
   },
   videos: [{ type: Schema.Types.ObjectId, ref: "Video" }],
 });
+
+const Playlist = model("Playlist", PlaylistSchema);
+
+module.exports = { Playlist };
