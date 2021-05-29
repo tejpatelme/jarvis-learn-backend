@@ -6,10 +6,12 @@ const express = require("express");
 const cors = require("cors");
 const { connectToDatabase } = require("./db/dbConnection");
 const { routeNotFound, errorHandler } = require("./middlewares");
-const { videosRouter } = require("./routes");
+const { videosRouter, usersRouter, playlistsRouter } = require("./routes");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
+
+app.use(express.json());
 app.use(cors());
 
 connectToDatabase();
@@ -19,6 +21,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/videos", videosRouter);
+app.use("/users", usersRouter);
+app.use("/playlists", playlistsRouter);
 
 /**
  * 404 Router Handler.
