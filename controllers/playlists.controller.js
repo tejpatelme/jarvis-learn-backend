@@ -40,8 +40,6 @@ exports.addOrRemoveVideo = async (req, res) => {
       (video) => String(video) === String(videoId)
     );
 
-    console.log(videoExistsIndex);
-
     videoExistsIndex !== -1
       ? playlist.videos.splice(videoExistsIndex, 1)
       : playlist.videos.push(videoId);
