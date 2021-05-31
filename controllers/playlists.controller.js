@@ -11,7 +11,7 @@ exports.createNewPlaylist = async (req, res) => {
       videos: [],
     });
 
-    res.status(201).json({ newPlaylist });
+    res.status(201).json({ success: true, newPlaylist });
   } catch (err) {
     res.status(500).json({ success: false, errorMessage: err.message });
   }
