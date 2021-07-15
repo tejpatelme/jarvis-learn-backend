@@ -1,5 +1,6 @@
 const { body, validationResult } = require("express-validator");
 const jwt = require("jsonwebtoken");
+const validator = require("validator");
 
 const validateEmail = body("email").isEmail().withMessage("Email is invalid");
 
@@ -30,8 +31,39 @@ const verifyToken = (req, res, next) => {
 
     return next();
   } catch (err) {
-    res.status(401).json({ success: false, errorMessage: err.message });
+    res
+      .status(401)
+      .json({ success: false, errorType: "JWT", errorMessage: err.message });
   }
+};
+
+//test
+
+const emailValidation = (req, res, next) => {
+  const { email } = req.body;
+  const isEmail = validator.isEmail(email);
+  if (!isEmail) {
+    return res
+      .status(401)
+      .json({ success: false, errorMessage: "Email is invalid" });
+  }
+
+  next();
+};
+
+const passwordValidation = (req, res, next) => {
+  const { password } = req.body;
+  const isStrongPassword = validator.isStrongPassword(password);
+
+  if (!isStrongPassword) {
+    return res.status(401).json({
+      success: false,
+      errorMessage:
+        "Password should be minimum 8 character long, contain one uppercase letter, one number, and one special character",
+    });
+  }
+
+  next();
 };
 
 module.exports = {
@@ -39,4 +71,6 @@ module.exports = {
   validatePassword,
   checkValidationErrors,
   verifyToken,
+  emailValidation,
+  passwordValidation,
 };

@@ -23,7 +23,7 @@ exports.getUserPlaylists = async (req, res) => {
   try {
     let userPlaylists = await Playlist.find({ userId }).populate("videos");
 
-    res.json(userPlaylists);
+    res.json({ success: true, userPlaylists });
   } catch (err) {
     res.status(500).json({ success: false, errorMessage: err.message });
   }
@@ -44,9 +44,10 @@ exports.addOrRemoveVideo = async (req, res) => {
       ? playlist.videos.splice(videoExistsIndex, 1)
       : playlist.videos.push(videoId);
 
-    await playlist.save();
+    let updatedPlaylist = await playlist.save();
+    updatedPlaylist = await updatedPlaylist.populate("videos").execPopulate();
 
-    res.status(200).json({ success: true });
+    res.status(200).json({ success: true, updatedPlaylist });
   } catch (err) {
     res.status(500).json({ success: false, errorMessage: err.message });
   }

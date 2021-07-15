@@ -13,9 +13,9 @@ exports.seedVideosDataToDatabase = async (req, res) => {
 
 exports.fetchAllVideos = async (req, res) => {
   try {
-    const videos = await Video.find({});
+    const videos = await Video.find({}).lean();
 
-    res.json(videos);
+    res.json({ success: true, videos });
   } catch (err) {
     res.status(500).json({ success: false, errorMessage: err.message });
   }
