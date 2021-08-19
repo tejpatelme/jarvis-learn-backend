@@ -55,3 +55,15 @@ exports.logInUser = async (req, res) => {
     res.status(500).json({ success: false, errorMessage: err.message });
   }
 };
+
+exports.getUserDetails = async (req, res) => {
+  const userId = req.userId;
+
+  try {
+    const user = await User.findById(userId);
+
+    res.status(200).json({ success: true, user });
+  } catch (err) {
+    res.status(500).json({ success: false, errorMessage: err.message });
+  }
+};
