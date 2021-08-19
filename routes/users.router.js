@@ -1,12 +1,19 @@
 const { Router } = require("express");
-const { signUpUser, logInUser } = require("../controllers/users.controller");
+const {
+  signUpUser,
+  logInUser,
+  getUserDetails,
+} = require("../controllers/users.controller");
 const {
   validateEmail,
   validatePassword,
   checkValidationErrors,
+  verifyToken,
 } = require("../middlewares/auth");
 
 const router = Router();
+
+router.route("/").get(verifyToken, getUserDetails);
 
 router
   .route("/signup")
