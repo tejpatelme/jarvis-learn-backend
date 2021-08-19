@@ -54,12 +54,14 @@ exports.addOrRemoveVideo = async (req, res) => {
 };
 
 exports.deletePlaylist = async (req, res) => {
+  const userId = req.userId;
   const { playlistId } = req.params;
 
   try {
     await Playlist.findByIdAndDelete(playlistId);
+    const updatedPlaylists = await Playlist.find({ userId }).populate("videos");
 
-    res.status(200).json({ success: true });
+    res.status(200).json({ success: true, updatedPlaylists });
   } catch (err) {
     res.status(500).json({ success: false, errorMessage: err.message });
   }
